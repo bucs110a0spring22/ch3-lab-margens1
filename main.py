@@ -19,8 +19,26 @@ leonardo.goto(-100,-20)
 
 ## 5. your code goes here
 
+michelangelo.forward(random.randrange(1,101))
+leonardo.forward(random.randrange(1,101))
+michelangelo.goto(-100,20)
+leonardo.goto(-100,-20)
+
+sequence = range(10)
+for x in sequence:
+  michelangelo.forward(random.randrange(1,11))
+  leonardo.forward(random.randrange(1,11))
 
 # Part B - complete part B here
+
+
+sides = [3, 4, 6, 9, 12]
+for angle in sides:
+  michelangelo.clear()
+  michelangelo.down()
+  for i in range(angle):
+    michelangelo.forward(100)
+    michelangelo.left(360/angle)
 
 
 window.exitonclick()
